@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ1-4_BERDIDA</title>
+<style>
+html, body {
+	margin: 0px; 
+	height: 100%;
+}
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  grid-template-areas:
+      "sidebar header header"
+      "footer footer sidebar-2"
+}
+.header {
+  grid-area: header;
+  background: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: red;
+}
+
+.sidebar-2 {
+  grid-area: sidebar-2;
+  background: cyan;
+}
+
+.footer {
+  grid-area: footer;
+  background: yellow;
+}
+
+@media only screen and (max-width: 600px){	
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-areas:
+      "header header"
+      "sidebar sidebar-2"
+	  "footer footer"
+}
+.header {
+  grid-area: header;
+  background: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: red;
+}
+
+
+.sidebar-2 {
+  grid-area: sidebar-2;
+  background: cyan;
+}
+
+.footer {
+  grid-area: footer;
+  background: yellow;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">&nbsp</div>
+  <div class="sidebar">&nbsp</div>
+  <div class="sidebar-2">&nbsp</div>
+  <div class="footer">&nbsp</div>
+</div>
+</body>
+</html>
